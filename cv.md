@@ -3,7 +3,7 @@
 ___
 * *My name is Anatoli. I stadied in Brest State Technical Univercity to be a engineer. I am working as a project manager. I would like to develop as a developer, because i like it. My strengths are communication skills and my technical mind*
 ___
-developer from JavaScript(JS, Git, HTML, CSS):
+developer from JavaScript (JS, Git, HTML, CSS):
 
     Exapmle:
     function century(year) {
