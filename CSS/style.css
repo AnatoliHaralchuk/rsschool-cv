@@ -1,0 +1,31 @@
+.header{
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  color: rgb(7, 165, 165);
+}
+.contacts{
+  font: italic 18px Arial sans-serif; 
+  }
+.example{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    background-color: honeydew;
+}
+.about{
+    font: italic 18px arial sens-serif;
+}
+.instagram{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    padding: 5px;
+    color: rgb(7, 165, 165);  
+}
+.down{
+    margin: auto;
+    padding: 0;
+    text-align: right;
+}
