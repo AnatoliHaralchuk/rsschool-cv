@@ -1,6 +1,15 @@
+.body{
+  margin: 10px auto;
+  max-width: 1400px;
+  width: 800px;
+  height:100%;
+  box-shadow: 15px 0 15px grey
+}
+.container{
+  margin: 20px 20px;
+}
 .header{
-  position: absolute;
-  top: 0px;
+  padding-top: 1px;
   left: 400px;
   color: rgb(7, 165, 165);
 }
@@ -25,7 +34,16 @@
     color: rgb(7, 165, 165);  
 }
 .down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
     margin: auto;
     padding: 0;
     text-align: right;
+}
+.year{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
 }
