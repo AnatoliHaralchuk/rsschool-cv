@@ -1,11 +1,221 @@
-.body{
-  margin: 10px auto;
-  max-width: 1400px;
-  width: 800px;
-  height:100%;
-  box-shadow: 15px 0 15px grey
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgb(216, 216, 216);
 }
-.container{
+::-webkit-scrollbar-thumb{
+  background: #1D7373;
+  border-radius: 10px;
+  width: 4px;
+}
+*{
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper{
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1440px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.left-side {
+  width: 35vw;
+  height: 100%;
+  background-color: rgb(216, 216, 216);
+}
+.right-side {
+  width: 65vw;
+  height: 100%;
+  background-color: rgb(199, 199, 199);
+}
+.main-left{
+  background-color: rgb(199, 199, 199);
+}
+.main-right{
+  background-color: rgb(216, 216, 216);
+}
+/* HEADER START--------------------------------------------- */
+.header {
+  display: flex;
+  height: 20rem;
+  border-bottom: 1px solid grey;
+  box-shadow: 0 0 15px black;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.header-right{
+  padding: 3.5rem 0rem 1rem 0rem;
+}
+.header__foto{
+  background-image: url("../assets/img/myFoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header__name {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1;
+  color: black;
+  text-shadow: 5px 5px 5px grey;
+  text-align: center;
+}
+@media (max-width: 750px) {
+  .header__name{
+    font-size: 2.5rem;
+  }
+}
+.header__role {
+  background: linear-gradient(90deg, #1D7373, rgb(100, 0, 0), #5F2580);
+  animation: header__role 15s ease infinite;
+  background-size: 300% 300%;
+  color: white;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  text-shadow: 5px 5px 5px rgb(175, 0, 0);
+  letter-spacing: 5px;
+  text-align: center;
+}
+@keyframes header__role{
+0% {
+  background-position: 0 50%;
+}
+50%{ 
+  background-position: 100% 50%;
+}
+100%{ 
+  background-position: 0 50%;
+}
+}
+.header__address {
+  color: rgb(3, 9, 14);
+  text-shadow: 5px 5px 5px grey;
+  font-size: 1.6rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+/* HEADER END--------------------------------------------- */
+/* NAVIGATION START--------------------------------------------- */
+.navigation{
+  height: 3rem;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+.nav-item {
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+/* NAVIGATION END--------------------------------------------- */
+/* MAIN START--------------------------------------------- */
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  box-shadow: 0 0 20px black;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.about-myself__title{
+  padding-top: 1rem;
+}
+.about-myself__text{
+  padding: 0rem 1rem;
+  text-align: justify;
+  /* text-shadow: 1px 1px 1px grey; */
+}
+.skills {
+  padding: 1rem;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: black;
+  text-shadow: 5px 5px 5px grey;
+}
+.skills-list {
+}
+.skills-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+.skills-list__item__name {
+  padding-bottom: 0.2rem;
+  width: 8rem;
+}
+.skills-list__item__progress{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.skills-list__item__progress progress{
+  border: 1px solid grey;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 8px;
+  background-color: #ffffff;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #1D7373, rgb(100, 0, 0), #5F2580);
+}
+.contacts {
+  padding: 1rem;
+}
+.contacts__title {
+}
+.contacts__list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.contacts__link{
+  color: black;
+  text-shadow: 5px 5px 5px grey;
+}
+.contacts__list__name {
+}
+.contacts__list__svg {
+  width: 3rem;
+}
+.language {
+}
+.language__list {
+}
+.language__list__name {
+}
+.language__list__level {
+}
+/* MAIN END----------------------------------------------- */
+/* FOOTER START--------------------------------------------- */
+.footer {
+  height: 7rem;
+  border-top: 1px solid grey;
+  background-color: rgb(199, 199, 199);
+  box-shadow: 0 0 20px black;
+  border-radius: 1rem;
+  /* overflow: auto; */
+}
+/* FOOTER END--------------------------------------------- */
+/* .container{
   margin: 20px 20px;
 }
 .header{
@@ -46,4 +256,4 @@
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
-}
+} */

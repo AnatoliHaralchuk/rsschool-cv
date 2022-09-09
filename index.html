@@ -7,8 +7,139 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Anatoli Haralchuk CV</title>
 </head>
-<body class="body" style="background-color: #eefdd6;">
- <div class="container">
+<body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="left-side header__foto"></div>
+        <div class="right-side header-right">
+            <h1 class="header__name">Anatoli<br>Haralchuk</h1>
+            <p class="header__role">Front-end develo<span>p</span>er</p>
+            <p class="header__address">Brest, Belarus</p>
+        </div>
+      </header> 
+      <nav class="navigation">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#about-myself" class="nav-link">About myself</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+            <li class="nav-item"><a href="#project" class="nav-link">Project</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="left-side main-left">
+            <section class="about-myself" id="about-myself">
+                <h2 class="about-myself__title">About myself</h2>
+                <p class="about-myself__text">&#160;&#160;&#160;&#160; My name is Anatoli. I am from Brest. I stadied in Brest State Technical Univercity to be a engineer. I am working as a project manager. I would like to develop as a developer, because this work have got interest, dynamics and develop</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="skills__title">My skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">TypeScript</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">JavaScript</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Angular</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="10" max="100"></progress>
+                            <span class="skills-list__item__value">10%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Webpack</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="70" max="100"></progress>
+                            <span class="skills-list__item__value">70%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Git</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Figma</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">HTML</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">SCSS</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li>
+                        <p class="contacts__list__name">Telegram:</p>
+                        <a class="contacts__link" href="https://t.me/Anatoli Haralchuk" target="_blank">@AnatoliHaralchuk</a>
+                        <img src="./assets/svg/telegram.svg" alt="telegram" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Phone:</p>
+                        <a class="contacts__link" href="tel:+375292224017" target="_blank">+375 29 222 40 17</a>
+                        <img src="./assets/svg/telephone.svg" alt="telephone" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Discord:</p>
+                        <a class="contacts__link" href="https://discord.com/" target="_blank">AnatoliHaralchuk#1485</a>
+                        <img src="./assets/svg/discord.svg" alt="telephone" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">E-mail:</p>
+                        <a class="contacts__link" href="https://mail.ru/sShades@mail.ru" target="_blank">sShades@mail.ru</a>
+                        <img src="./assets/svg/mail.svg" alt="E-mail" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Instagram:</p>
+                        <a class="contacts__link" href="https://www.instagram.com/haralchukanatoli/" target="_blank">AnatoliHaralchuk</a>
+                        <img src="./assets/svg/instagram.svg" alt="E-mail" class="contacts__list__svg">
+                    </li>
+                </ul>
+            </section>
+            <section class="language" id="language">
+                <h2 class="language">Language</h2>
+                <ul class="language">
+                    <li class="language__list">
+                        <p class="language__list__name"></p>
+                        <p class="language__list__level"></p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="right-side main-right"></div>
+      </main> 
+      <nav class="navigation"></nav>
+      <footer class="footer"></footer>
+    </div>
+ <!-- <div class="container">
+    
     <header class="header">
         <div>
             <h1>Anatoli Haralchuk CV</h1>
@@ -21,7 +152,7 @@
     <section>
         <h3>Foto</h3>
         <div>
-            <img src="me.jpg" alt="it's me" width="320" height="214">
+            <img src="./assets/img/myFoto.jpg" alt="it's me" width="320" height="214">
         </div>
         <p>Hello, my name is Anatoli Haralchuk</p>
     </section>
@@ -76,6 +207,6 @@
             
         </div>
     </footer>
- </div>
+ </div> -->
 </body>
 </html>
