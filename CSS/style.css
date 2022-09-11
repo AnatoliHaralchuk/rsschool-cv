@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: black;
 }
+li {
+  list-style: none;
+}
 .wrapper{
   font-size: 1.6rem;
   margin: 0 auto;
@@ -197,12 +200,21 @@ progress::-webkit-progress-value {
   width: 3rem;
 }
 .language {
+  padding: 1rem;
 }
-.language__list {
+.language__list li{
+  display: flex;
+  column-gap: 1rem;
 }
 .language__list__name {
+  text-align: start;
+  width: 30%;
 }
 .language__list__level {
+}
+.example{
+  padding: 1rem;
+  font-style: italic;
 }
 /* MAIN END----------------------------------------------- */
 /* FOOTER START--------------------------------------------- */
@@ -213,6 +225,26 @@ progress::-webkit-progress-value {
   box-shadow: 0 0 20px black;
   border-radius: 1rem;
   /* overflow: auto; */
+}
+.footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.year-container {
+}
+.year_city {
+}
+.year {
+}
+.github {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.github img{
+  width: 2rem;
 }
 /* FOOTER END--------------------------------------------- */
 /* .container{
