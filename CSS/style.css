@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -32,34 +33,12 @@ li {
 }
 .left-side {
   width: 35vw;
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(200, 200, 200);
 }
 .right-side {
   width: 65vw;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(180, 180, 180);
 }
-.medium-line{
-  width: 7px;
-  /* height: 90%; */
-  /* margin: auto 0; */
-  background: linear-gradient(0deg, #5F2580, rgb(100, 0, 0),#1D7373);
-  animation: medium-line 15s ease infinite;
-  background-size: 100% 600%;
-}
-@keyframes medium-line{
-  0% {
-    background-position: 0 0%;
-  }
-  50%{ 
-    background-position: 0% 100%;
-  }
-  100%{ 
-    background-position: 0% 0%;
-  }
-  }
-/* .main-left{
-  background-color: rgb(199, 199, 199);
-} */
 .main-right{
   background-color: rgb(216, 216, 216);
 }
@@ -127,6 +106,7 @@ li {
 /* NAVIGATION START--------------------------------------------- */
 .navigation{
   height: 3rem;
+  
 }
 .nav-items {
   display: flex;
@@ -137,6 +117,7 @@ li {
   font-size: 1.6rem;
 }
 .nav-item {
+  
 }
 .nav-link{
   font-weight: 900;
@@ -184,7 +165,6 @@ li {
   text-align: justify;
 
 }
-
 .skills {
   padding: 1rem;
 }
@@ -226,8 +206,6 @@ progress::-webkit-progress-value {
 .contacts {
   padding: 1rem;
 }
-.contacts__title {
-}
 .contacts__list li{
   display: flex;
   justify-content: space-between;
@@ -237,8 +215,6 @@ progress::-webkit-progress-value {
 .contacts__link{
   color: black;
   text-shadow: 5px 5px 5px grey;
-}
-.contacts__list__name {
 }
 .contacts__list__svg {
   width: 3rem;
@@ -254,10 +230,6 @@ progress::-webkit-progress-value {
   text-align: start;
   width: 30%;
 }
-.language__list__level {
-}
-.projects {
-}
 .projects__title {
   padding-top: 1rem;
 }
@@ -270,8 +242,11 @@ progress::-webkit-progress-value {
 .project__item {
   border-radius: 3%;
   width: 47%;
-  height: 200px;
+  height: 250px;
   background-color: #1D7373;
+}
+.education{
+  padding-top: 1rem;
 }
 .education__body{
   display: flex;
@@ -287,8 +262,23 @@ progress::-webkit-progress-value {
 .education__place {
   width: 70%;
 }
-.example{
+.certificates {
+}
+.certificates__title {
+}
+.certificates__list {
+  display: flex;
+  gap: 1rem;
   padding: 1rem;
+}
+.certificates__item {
+  border-radius: 10px;
+  background-color: #1D7373;
+  width: 19%;
+  height: 250px;
+}
+.example{
+  margin: 1rem;
   font-style: italic;
 }
 /* MAIN END----------------------------------------------- */
@@ -302,7 +292,7 @@ progress::-webkit-progress-value {
 .footer {
   height: 7rem;
   border-top: 1px solid grey;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(180, 180, 180);
   box-shadow: 0 0 20px black;
   border-radius: 1rem;
   /* overflow: auto; */
