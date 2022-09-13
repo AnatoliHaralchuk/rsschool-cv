@@ -7,75 +7,242 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Anatoli Haralchuk CV</title>
 </head>
-<body class="body" style="background-color: #eefdd6;">
- <div class="container">
-    <header class="header">
-        <div>
-            <h1>Anatoli Haralchuk CV</h1>
-            <hr>
+<body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="left-side header__foto"></div>
+        <div class="right-side header-right">
+            <h1 class="header__name">Anatoli<br>Haralchuk</h1>
+            <p class="header__role">Front-end developer</p>
+            <p class="header__address">Brest, Belarus</p>
         </div>
-    </header>  
-    <nav class="Instagram">
-        <a href="https://www.instagram.com/haralchukanatoli/"><i>INSTAGRAM</i></a>
-    </nav> 
-    <section>
-        <h3>Foto</h3>
-        <div>
-            <img src="me.jpg" alt="it's me" width="320" height="214">
+      </header> 
+      <nav class="navigation">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#about-myself" class="nav-link">About myself</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+            <li class="nav-item"><a href="#project" class="nav-link">Project</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="left-side main-left">
+            <section class="about-myself" id="about-myself">
+                <h2 class="about-myself__title">About myself</h2>
+                <p class="about-myself__text">&#160;&#160; Hello, I am junior front-end developer. I very glad and proud that I studied at RS School. At now i am studying framework Angular. Nothing comes easy, but if you work hard, the result is inevitable!</p>
+            </section>
+            <div class="border"></div>
+            <section class="skills" id="skills">
+                <h2 class="skills__title">My skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">TypeScript</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">JavaScript</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Angular</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="10" max="100" data-current="90"></progress>
+                            <span class="skills-list__item__value">10%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Webpack</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="70" max="100"></progress>
+                            <span class="skills-list__item__value">70%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Git</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">Figma</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">HTML</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                    <li class="skills-list__item">
+                        <div class="skills-list__item__name">SCSS</div>
+                        <div class="skills-list__item__progress">
+                            <progress value="90" max="100"></progress>
+                            <span class="skills-list__item__value">90%</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="border"></div>
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li>
+                        <p class="contacts__list__name">Telegram:</p>
+                        <a class="contacts__link" href="https://t.me/AnatoliHaralchuk" target="_blank">@AnatoliHaralchuk</a>
+                        <img src="./assets/svg/telegram.svg" alt="telegram" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Phone:</p>
+                        <a class="contacts__link" href="tel:+375292224017" target="_blank">+375 29 222 40 17</a>
+                        <img src="./assets/svg/telephone.svg" alt="telephone" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Discord:</p>
+                        <a class="contacts__link" href="https://discord.com/" target="_blank">AnatoliHaralchuk#1485</a>
+                        <img src="./assets/svg/discord.svg" alt="telephone" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">E-mail:</p>
+                        <a class="contacts__link" href="https://mail.ru/sShades@mail.ru" target="_blank">sShades@mail.ru</a>
+                        <img src="./assets/svg/mail.svg" alt="E-mail" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">Instagram:</p>
+                        <a class="contacts__link" href="https://www.instagram.com/haralchukanatoli/" target="_blank">AnatoliHaralchuk</a>
+                        <img src="./assets/svg/instagram.svg" alt="E-mail" class="contacts__list__svg">
+                    </li>
+                    <li>
+                        <p class="contacts__list__name">GitHub:</p>
+                        <a class="contacts__link" href="https://github.com/AnatoliHaralchuk" target="_blank">AnatoliHaralchuk</a>
+                        <img src="./assets/svg/github.svg" alt="GitHub" class="contacts__list__svg">
+                    </li>
+                </ul>
+            </section>
+            <div class="border"></div>
+            <section class="language" id="language">
+                <h2 class="language">Language</h2>
+                <ul class="language__list">
+                    <li>
+                        <p class="language__list__name">English:</p>
+                        <p class="language__list__level">Pre-Intermediate</p>
+                    </li>
+                    <li>
+                        <p class="language__list__name">Russian:</p>
+                        <p class="language__list__level">Native</p>
+                    </li>
+                </ul>
+            </section>
         </div>
-        <p>Hello, my name is Anatoli Haralchuk</p>
-    </section>
-<hr>
-    <article>
-        <div>
-            <h2>About myself</h2>
+        <div class="right-side main-right">
+            <section class="projects">
+                <h2 class="projects__title">Projects</h2>
+                <div class="projects__list">
+                    <a href="https://anatoliharalchuk.github.io/rslang/dist/" class="project__item" target="_blank">
+                        <div class="project__name"><p>RS Lang</p></div>
+                        <img src="./assets/img/rslang.png" alt="rslang">
+                    </a>
+                    <a href="https://anatoliharalchuk.github.io/Async-race/dist/" class="project__item" target="_blank">
+                        <div class="project__name"><p>Async-race<br>(run with server)</p></div>
+                        <img src="./assets/img/Async-race.png" alt="Acync-race">
+                    </a>
+                    <a href="https://anatoliharalchuk.github.io/Online-store/dist/" class="project__item" target="_blank">
+                        <div class="project__name"><p>Online-store</p></div>
+                        <img src="./assets/img/Online-store.png" alt="Online-store">
+                    </a>
+                    <a href="https://anatoliharalchuk.github.io/virtual-keyboard/" class="project__item" target="_blank">
+                        <div class="project__name"><p>Virtual-keyboard</p></div>
+                        <img src="./assets/img/virtualkeyboard.png" alt="virtual-keyboard">
+                    </a>
+                    <a href="https://anatoliharalchuk.github.io/cssMemSlider/cssMemSlider/" class="project__item" target="_blank">
+                        <div class="project__name"><p>CssMemSlider</p></div>
+                        <img src="./assets/img/cssmem.png" alt="cssMemSlider">
+                    </a>
+                    <a href="https://anatoliharalchuk.github.io/Shelter/pages/main/" class="project__item" target="_blank">
+                        <div class="project__name"><p>Shelter</p></div>
+                        <img src="./assets/img/Shelter.png" alt="shelter">
+                    </a>
+                </div>
+            </section>
+            <section class="education" id="education">
+                <h2 class="education__title">Education</h2>
+                <div class="education__body">
+                    <div class="education__year">2007 - 2012</div>
+                    <div class="education__place">Brest State Technical University<br><b>Engineer</b></div>
+                </div>
+                <div class="education__body">
+                    <div class="education__year">2021 - 2022</div>
+                    <div class="education__place">RS School«JavaScript/Front-end»<br><b>Front-end developer</b></div>
+                </div>
+            </section>
+            <section class="certificates" id="certificates">
+                <h2 class="certificates__title">Certificates</h2>
+                <div class="certificates__list">
+                    <div class="certificates__item">
+                        <a href="https://app.rs.school/certificate/ujk5ofd0" target="_blank">
+                            <img src="./assets/img/sertificate0.png" alt="stage0">
+                        </a>
+                    </div>
+                    <div class="certificates__item"></div>
+                </div>
+            </section>
+            <section class="code-example">
+                <h2 class="code-example__title">Code example</h2>
+                <details class="example">
+                    <summary><b>Code example</b></summary>
+                    <div>
+                        <pre>  export class App {
+    private controller: AppController;
+
+    private view: View;
+
+    constructor() {
+      this.controller = new AppController();
+      this.view = new View();
+    }
+
+    startApp():void {
+      this.controller.startPage((data) => this.view.drawFullPage(data));
+      document.body.addEventListener("click", (event) => {
+        this.controller.listener(
+          event,
+          (data) => this.view.drawPageGarage(data)
+        );
+      });
+    }
+  }</pre>
+                    </div>
+                </details>
+            </section>
         </div>
-        <div class="about">
-            <p>&#160;&#160;&#160;&#160; My name is Anatoli. I am from Brest. I stadied in Brest State Technical Univercity to be a engineer. I am working as a project manager. I would like to develop as a developer, because this work have got interest, dynamics and develop</p>
+      </main> 
+      <div class="down-gap">have a nice day!!!</div>
+      <footer class="footer">
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="logo" width="150" height="100">
+        </a>
+        <div class="year-container">
+            <p class="year_city">Brest</p>
+            <p class="year">2022</p>
         </div>
-        <div>
-        <h4>My English level is Pre-intermediate (A2+)</h4>
-        </div>
-    </article>
-    <details class="example">
-        <summary><b>Code for Example</b></summary>
-        <div>
-            <code>function century(year) {
-            return (Math.ceil(year/100));
-            }</code>
-        </div>
-    </details>
-<hr>
-    <footer>
-        <div>
-            <h2>Skills list</h2>
-            <ul>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Contacts</h2>
-            <ul class="contacts">
-                <li>adress: 224028, Brest, Brestskaya, Belarus, Grodnenskaya 42/21</li>
-                <li>telphone nuber: +375292224017</li>
-                <li>email: sShades@mail.ru</li>
-                <li><a href="https://github.com/AnatoliHaralchuk">GitHub AnatoliHaralchuk</a></li>
-            </ul>
-        </div>
-        <hr>
-        <div class="down">
-            
-                <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="logo" width="100" height="100">
-                </a>
-                <p class="year">2022 year</p>
-            
-        </div>
-    </footer>
- </div>
-</body>
+        <a class="github" href="https://github.com/AnatoliHaralchuk" target="_blank">
+            <img src="./assets/svg/github.svg" alt="GitHub">
+            <p>AnatoliHaralchuk</p>
+        </a>
+      </footer>
+    </div>
+ </body>
 </html>
