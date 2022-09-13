@@ -240,10 +240,42 @@ progress::-webkit-progress-value {
   gap: 1rem;
 }
 .project__item {
+  position: relative;
   border-radius: 3%;
   width: 47%;
   height: 250px;
-  background-color: #1D7373;
+  box-shadow: 1px 1px 2px 1px #5F2580;
+  overflow: hidden;
+}
+.project__item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.project__name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(128, 128, 128, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #5F2580;
+  text-shadow: 5px 5px 5px grey;
+  transition: all 1.3s ease-in-out;
+  opacity: 0;
+  text-align: center;
+  transform: translateX(70%) rotate(180deg);
+}
+.project__name p{
+text-shadow: 1px 1px 3px #1D7373;
+}
+.project__item:hover .project__name{
+  opacity: 1;
+  transform: translateX(0%) rotate(0deg);
 }
 .education{
   padding-top: 1rem;
@@ -262,10 +294,6 @@ progress::-webkit-progress-value {
 .education__place {
   width: 70%;
 }
-.certificates {
-}
-.certificates__title {
-}
 .certificates__list {
   display: flex;
   gap: 1rem;
@@ -273,9 +301,11 @@ progress::-webkit-progress-value {
 }
 .certificates__item {
   border-radius: 10px;
-  background-color: #1D7373;
-  width: 19%;
-  height: 250px;
+  width: 30%;
+  height: 100%;
+}
+.certificates__item a img{
+  width: 100%;
 }
 .example{
   margin: 1rem;
@@ -327,5 +357,6 @@ progress::-webkit-progress-value {
   width: 2rem;
 }
 .github:hover{
+  color: #1D7373;
 }
 /* FOOTER END--------------------------------------------- */
